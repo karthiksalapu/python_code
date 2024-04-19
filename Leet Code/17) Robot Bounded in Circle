@@ -1,0 +1,24 @@
+class Solution(object):
+    def isRobotBounded(self, instructions):
+        """
+        :type instructions: str
+        :rtype: bool
+        """
+
+        x, y = 0, 0
+        direction = 0 #additonal consideration from basic robot sum
+
+        directions = [(0, 1), (1, 0), (0, -1), (-1, 0)] #possible directions
+
+        for instruction in instructions:
+            if instruction == 'G':
+                dx, dy = directions[direction]
+                x += dx
+                y += dy
+            elif instruction == 'L':
+                direction = (direction - 1) % 4 #anti-clockwise rotation
+            elif instruction == 'R':
+                direction = (direction + 1) % 4 #clockwise rotation
+
+        return (x, y) == (0, 0) or direction != 0
+        

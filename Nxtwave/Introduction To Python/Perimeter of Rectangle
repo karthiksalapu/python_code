@@ -1,0 +1,3 @@
+l=input()
+b=input()
+print(2*(int(l)+int(b)))

@@ -1,0 +1,3 @@
+length=input()
+breadth=input()
+print(int(length)*int(breadth))

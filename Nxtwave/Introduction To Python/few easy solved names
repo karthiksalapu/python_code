@@ -1,0 +1,65 @@
+#Print in Reverse order
+
+first_line=input()
+second_line=input()
+print(second_line)
+print(first_line)
+
+
+#================================
+#String Repetition
+
+word=input()
+print((word+" ")*3)
+
+
+#*************************************************************
+#Details of few easy question that solved and no need in GIT
+#*************************************************************
+
+# Hello World
+# Easy
+# SOLVED
+# Three Hashes
+# Easy
+# SOLVED
+# Sum of 2495 and 789358
+# Easy
+# SOLVED
+# Subtract 596 from 193856
+# Easy
+# SOLVED
+# Product of 37, 61 and 391
+# Easy
+# SOLVED
+# Divide 33968 by 176
+# Easy
+# SOLVED
+# Print the Input
+# -
+# SOLVED
+# Print the Input - 2
+# Easy
+# SOLVED
+# Print the Input - 3
+# Easy
+# SOLVED
+# Second Line
+# -
+# SOLVED
+# Print in Reverse Order
+# -
+# SOLVED
+# Hello World
+# -
+# SOLVED
+# Print the Input - 4
+# -
+# SOLVED
+# Join Words
+# Easy
+# SOLVED
+# Full Name
+# Easy
+# SOLVED
+# Print Name and Age

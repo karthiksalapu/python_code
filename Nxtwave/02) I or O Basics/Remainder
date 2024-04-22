@@ -1,0 +1,13 @@
+num1 = input()
+num2 = input()
+
+num1 = int(num1)
+num2 = int(num2)
+
+quotient = num1 / num2
+quotient = float(quotient)
+quotient = int(quotient)
+
+result = num1 - (num2 * quotient)
+
+print(result)

@@ -1,0 +1,8 @@
+word1 = input()
+word2 = input()
+
+word2 = int(word2)
+
+index = word1[word2]
+
+print(index)

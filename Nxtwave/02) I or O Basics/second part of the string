@@ -1,0 +1,7 @@
+word = input()
+
+words = word[:1]
+numbers = word[2:]
+numbers = int(numbers)
+
+print(numbers)

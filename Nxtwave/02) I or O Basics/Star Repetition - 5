@@ -1,0 +1,12 @@
+word = input()
+word2 = input()
+
+length_of_word = int(len(word))
+length_of_word2 = int(len(word2))
+
+string_repetition = word[length_of_word2:]
+first_letters = "*" * length_of_word2
+
+result = first_letters + string_repetition
+
+print(result)

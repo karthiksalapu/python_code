@@ -1,0 +1,10 @@
+W = input()
+I = int(input())
+C = input()
+
+base_word = W[:I]
+last_word = W[(I+1):]
+
+result = base_word + C + last_word
+
+print(result)

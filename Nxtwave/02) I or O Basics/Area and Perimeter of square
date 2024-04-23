@@ -1,0 +1,10 @@
+N = int(input())
+
+Area = str(N*N)
+Perimeter = str(4*N)
+
+Area = "Area of the square is: " + Area
+Perimeter = "Perimeter of the square is: " + Perimeter
+
+print(Area)
+print(Perimeter)

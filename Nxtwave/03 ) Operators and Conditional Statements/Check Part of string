@@ -1,0 +1,7 @@
+A=input()
+B=input()
+I=int(input())
+length_A=len(A)
+B=A[2:(length_A-1)]
+result=length_A==B
+print(result)

@@ -1,0 +1,12 @@
+length = int(input())
+bredth = int(input())
+
+Area = length*bredth
+Perimeter = 2 * (length + bredth)
+
+condition = Area <= Perimeter
+
+if condition :
+    print("True")
+else :
+    print("False")

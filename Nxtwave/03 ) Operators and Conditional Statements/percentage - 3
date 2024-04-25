@@ -1,0 +1,10 @@
+P = int(input())
+N = int(input())
+
+percentage = P*(500/100)
+condition = percentage == N
+
+if condition :
+    print("True")
+else :
+    print("False")

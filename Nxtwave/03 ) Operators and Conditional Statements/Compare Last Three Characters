@@ -1,0 +1,18 @@
+first_string = input()
+second_string = input()
+
+length_of_first_string = int(len(first_string))
+length_of_second_string = int(len(second_string))
+
+diff_of_first = length_of_first_string - 3
+diff_of_second = length_of_second_string - 3
+
+part_first_string = first_string[diff_of_first:]
+part_second_string = second_string[diff_of_second:]
+
+condition = part_first_string == part_second_string
+
+if condition :
+    print("True")
+else :
+    print("False")

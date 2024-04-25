@@ -1,0 +1,15 @@
+A = int(input())
+B = int(input())
+
+condition1 = A <= B
+condition2 = B <= A
+
+if condition1 :
+    print("A <= B is True")
+else :
+    print("A <= B is False")
+    
+if condition2 :
+    print("B <= A is True")
+else :
+    print("B <= A is False")

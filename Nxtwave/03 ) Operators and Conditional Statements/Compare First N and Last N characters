@@ -1,0 +1,18 @@
+string = input()
+N = int(input())
+
+length_of_string = len(string)
+length_of_last_characters = length_of_string - N
+
+first_three = string[:N]
+last_three = string[length_of_last_characters:]
+
+condition = first_three != last_three
+
+if condition :
+    print("True")
+else :
+    print("False")
+
+
+

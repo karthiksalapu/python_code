@@ -1,0 +1,8 @@
+m = int(input())
+p = int(input())
+c = int(input())
+
+c1 = m >= 70 and p >= 70 and c >= 70
+c2 = (m+p+c) >= 180
+
+print(c1 or c2)

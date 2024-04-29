@@ -1,0 +1,8 @@
+salary = int(input())
+years_of_service = input()
+
+number_of_years = int(years_of_service)
+if (number_of_years >= 5):
+    print((salary * 5)/100)
+else:
+    print("No Bonus")

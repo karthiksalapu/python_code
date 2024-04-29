@@ -1,0 +1,18 @@
+A = int(input())
+B = int(input())
+C = int(input())
+
+sum_of_AB = A + B
+sum_of_BC = B + C
+sum_of_AC = A + C
+
+condition1 = sum_of_AB > C
+condition2 = sum_of_BC > A
+condition3 = sum_of_AC > B
+
+is_true = condition1 and condition2 and condition3
+
+if is_true :
+    print("True")
+else :
+    print("False")

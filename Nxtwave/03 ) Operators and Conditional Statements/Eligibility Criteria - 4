@@ -1,0 +1,11 @@
+M = int(input())
+P = int(input())
+C = int(input())
+
+condition = (M >= 60) and (P >= 50) and (C >= 45)
+condition1 = condition and ((M + P + C) >= 180)
+condition2 = ((M+P) >= 120) or ((C+P) >= 110)
+
+is_true = condition1 or condition2
+
+print(is_true)

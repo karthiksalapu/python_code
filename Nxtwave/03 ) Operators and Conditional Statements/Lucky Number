@@ -1,0 +1,11 @@
+a = int(input())
+b = int(input())
+
+c1 = ( a == 6 ) or (b == 6)
+c2 = (a + b) == 6
+c3 = (a - b) == 6 or (b - a) == 6
+
+if c1 or c2 or c3 :
+    print("Lucky")
+else:
+    print("Not Lucky")

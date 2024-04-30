@@ -1,0 +1,12 @@
+n = input()
+a = int(n[0])
+b = int(n[1])
+c = int(n[2])
+n = int(n)
+c1 = (a != 5) or (b != 5) or (c != 5)
+c2 = (n > 300) and (n < 700)
+
+if c1 and c2 :
+    print("Valid Number")
+else:
+    print("Not a Valid Number")

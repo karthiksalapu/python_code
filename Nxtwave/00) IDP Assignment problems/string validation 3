@@ -1,0 +1,13 @@
+s = input()
+
+letter_count = 1 #already we are taking the confirmation that whether the first letter is lower or not, so initiating count at 1.
+#function islower() can also be used.
+
+if s[0] == s[0].lower() and s.isalpha():
+    for char in s:
+        if char == char.upper():
+            letter_count += 1
+    
+    print(True, letter_count)
+else:
+    print(False)

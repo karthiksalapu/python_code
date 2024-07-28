@@ -1,3 +1,5 @@
+#Question Link : https://res.cloudinary.com/dxgjkkcdx/image/upload/v1722162299/string_validation_-_3_rfzcff.png
+
 s = input()
 
 letter_count = 1 #already we are taking the confirmation that whether the first letter is lower or not, so initiating count at 1.

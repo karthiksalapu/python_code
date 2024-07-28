@@ -1,0 +1,38 @@
+m,n = map(int, input().split())
+
+matrix = []
+for index in range(m):
+    row = input().split()
+    matrix.append(row)
+
+# print(matrix)
+path_list = []
+for i in range(n):
+    temp = []
+    for j in range(m):
+        race_path = int(matrix[j][i])
+        temp.append(race_path)
+    
+    path_list.append(temp)
+
+# print(path_list)
+
+racer_distance_list = []
+for path in path_list:
+    racer_distance_list.append(sum(path))
+# print(racer_distance_list)
+max_racer_distance = max(racer_distance_list)
+max_distance_riders = []
+# count = racer_distance_list.index(max_racer_distance) + 1
+count = 1
+
+# print(count)
+# print(max_racer_distance)
+
+for racer in path_list:
+    if sum(racer) >= max_racer_distance:
+        racer_distance = sum(racer)
+        max_distance_riders.append(count)
+    count += 1
+
+print(max_distance_riders)

@@ -1,0 +1,26 @@
+#Question Link : https://res.cloudinary.com/dxgjkkcdx/image/upload/v1722162171/top_racers_-_3_nroqjh.png
+
+m,n = map(int, input().split())
+
+matrix = []
+for index in range(m):
+    row = input().split()
+    int_list = list(map(int, row))
+    matrix.append(int_list)
+
+racer_distance_list = []
+for path in matrix:
+    racer_distance_list.append(sum(path))
+
+max_racer_distance = max(racer_distance_list)
+max_distance_riders = []
+
+count = 1
+
+for racer in matrix:
+    if sum(racer) >= max_racer_distance:
+        racer_distance = sum(racer)
+        max_distance_riders.append(count)
+    count += 1
+
+print(max_distance_riders)

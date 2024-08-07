@@ -1,0 +1,78 @@
+#check this with the solution once before proceeding
+#the question is crystal clear but logic is quite
+#the logic matters, solving this with checking left and top indexes is easy to get answer
+
+m,n = map(int, input().split())
+
+matrix = []
+for _ in range(m):
+    matrix.append(list(map(int, input().split())))
+
+train_count = 0
+
+for i in range(m):
+    for j in range(n):
+        if matrix[i][j]==1: #checks the start of a train
+            if i-1 >=0 and matrix[i-1][j]==1: #checks the existence of train bhogi on top
+                continue
+            elif j-1>=0 and matrix[i][j-1]==1: #checks the existence of train bhogi on left
+                continue
+            else:
+                train_count += 1
+
+print(train_count)
+
+
+
+
+
+#==============================================================================================================
+
+#Question
+
+#Number Of Trains
+
+# Explanation:
+
+# There's a 2D map representing the railway routes in the form of a M x N matrix.
+
+# In this matrix, each cell is either 1 or 0. A cell 1 represents a part of a train and a cell O represents empty track.
+
+# All trains are placed only horizontally or vertically. The width of each train is exactly one cell.
+
+
+# In the above image, there are four trains. The cells in brown color represent the train placed vertically, and the cells in pink color represent the train placed horizontally.
+
+# Any two trains are separated by at least one horizontal cell O or vertical cell 0.
+
+# Your task is to find the total number of trains in the matrix.
+
+# Write a program that reads two numbers M, N and a M x N matrix representing the 2D map, and prints a number representing the total number of trains in the matrix.
+
+
+# Input
+
+# The first line of input contains two space-separated integers representing M and N respectively. The next M lines contains N space-separated integers.
+
+# Output
+
+# The output should be a single line containing an integer that is the total number of trains in the matrix.
+
+# Detailed Explanation: 
+
+# For example, if M=4, N= 4, and the next M lines are,
+
+# 1 0 0 1
+# 0 0 0 1
+# 1 1 0 1
+# 0 0 1 0
+
+# • The first train occupied only one cell, matrix[0][0]
+
+# • The second train occupied two cells, matrix [2][0] to matrix[2][1]
+
+# • The third train occupied only one cell, matrix[3][2]
+
+# • The fourth train occupied three cells, matrix [0] [3] to matrix[2][3]
+
+# The output should be 4.

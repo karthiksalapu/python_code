@@ -1,0 +1,27 @@
+prime_numbers = []
+
+for number in range(2, 101):
+    factors = 0 #here taking factors will help to get prime numbers easily
+    
+    for i in range(2, number):
+        if (number % i) == 0: #here also the condition was checked on the number, not on iteration
+            factors = factors + 1
+        
+    if factors == 0:
+        prime_numbers.append(number)
+        
+print(prime_numbers)
+
+
+N = int(input())
+prime_factors = []
+
+
+for i in range(N):
+    for prime in prime_numbers:
+        if N % prime == 0:
+            prime_factors.append(prime)
+            N = N//prime
+            break
+
+print(prime_factors)
